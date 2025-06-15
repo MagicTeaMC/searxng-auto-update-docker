@@ -1,0 +1,11 @@
+services:
+    searxng:
+        ports:
+            - 8080:8080
+        volumes:
+            - /home/changeme/searxng:/etc/searxng
+        environment:
+            - BASE_URL=https://changeme/
+            - INSTANCE_NAME=SearXNG
+        image: searxng/searxng
+        restart: unless-stopped
