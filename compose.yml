@@ -1,7 +1,7 @@
 services:
     searxng:
         ports:
-            - 8080:8080
+            - changeme:8080
         volumes:
             - /home/changeme/searxng:/etc/searxng
         environment:
